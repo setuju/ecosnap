@@ -172,7 +172,9 @@ Distributed under the MIT License. See `LICENSE` for more information.
 - **GitHub Copilot** for being an invaluable AI pair programmer throughout this sprint.
 
 ---
-
+[POC](assets/EcoSnap_AI_Plant_Identifier.png)
+[OMG I CAN'T BELIEVE THIS WORKED!](ecosnap-alpha.vercel.app)
+---
 <div align="center">
 
 **🌱 Every plant you identify is a vote for a greener, more biodiverse planet.**  
