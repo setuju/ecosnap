@@ -6,7 +6,7 @@
 
 **EcoSnap** is a privacy‑first, AI‑powered plant identifier that helps you discover, care for, and garden with native plants to support local biodiversity. Snap a photo, get instant identification, and receive eco‑friendly gardening tips — all powered by Google's Gemini AI.
 
-🌱 **Live Demo:** [ecosnap.vercel.app](https://ecosnap.vercel.app)  
+🌱 **Live Demo:** [ecosnap-alpha.vercel.app](ecosnap-alpha.vercel.app)  [ecosnaps.netlify.app](ecosnaps.netlify.app)
 📦 **GitHub Repository:** [github.com/setuju/ecosnap](https://github.com/setuju/ecosnap)
 
 ---

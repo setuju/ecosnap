@@ -1,3 +1,3 @@
 window.ENV = {
-    GEMINI_API_KEY: '{your_API_CODE_START_WITH_AIza.....}'
+    GEMINI_API_KEY: 'YOUR_API_KEY'
 };
