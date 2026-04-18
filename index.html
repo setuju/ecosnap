@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoSnap · AI Plant Identifier</title>
+    <meta name="description" content="Snap any plant and get instant identification, care tips, and eco-friendly gardening advice.">
+    
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="logo">
+                <i class="fa-solid fa-leaf"></i>
+                <h1>EcoSnap</h1>
+            </div>
+            <p class="tagline">Snap · Identify · Garden Greener</p>
+        </header>
+
+        <main>
+            <!-- Upload Section -->
+            <div class="card upload-card">
+                <h2><i class="fa-solid fa-camera"></i> Identify a Plant</h2>
+                <div class="upload-area" id="uploadArea">
+                    <input type="file" id="imageInput" accept="image/*" capture="environment" hidden>
+                    <i class="fa-solid fa-cloud-upload-alt"></i>
+                    <p>Click, paste, or drag an image here</p>
+                    <span class="hint">Supports JPG, PNG · Max 5MB</span>
+                </div>
+                <div id="previewContainer" class="preview-container" style="display: none;">
+                    <img id="previewImage" src="" alt="Preview">
+                    <div class="preview-actions">
+                        <button id="cameraBtn" class="btn-secondary btn-small"><i class="fa-solid fa-camera"></i> Camera</button>
+                        <button id="removeImageBtn" class="btn-secondary btn-small"><i class="fa-solid fa-times"></i> Remove</button>
+                    </div>
+                </div>
+                <button id="identifyBtn" class="btn-primary btn-large" disabled>
+                    <i class="fa-solid fa-microchip"></i> Identify Plant
+                    <span class="loading-spinner" style="display: none;"><i class="fa-solid fa-spinner fa-spin"></i></span>
+                </button>
+            </div>
+
+            <!-- Result Card -->
+            <div id="resultCard" class="card result-card" style="display: none;">
+                <div class="result-header">
+                    <h2><i class="fa-solid fa-seedling"></i> Plant Info</h2>
+                    <div>
+                        <button id="copyResultBtn" class="icon-btn" title="Copy result"><i class="fa-solid fa-copy"></i></button>
+                        <button id="shareResultBtn" class="icon-btn" title="Share"><i class="fa-solid fa-share-nodes"></i></button>
+                    </div>
+                </div>
+                <div id="plantInfo" class="plant-info"></div>
+            </div>
+
+            <!-- Garden Tips Card -->
+            <div id="tipsCard" class="card" style="display: none;">
+                <h2><i class="fa-solid fa-tree"></i> Eco Garden Tips</h2>
+                <div id="gardenTips" class="garden-tips"></div>
+            </div>
+
+            <!-- History Section -->
+            <div class="card history-card">
+                <div class="history-header">
+                    <h2><i class="fa-solid fa-clock-rotate-left"></i> Recent Identifications</h2>
+                    <button id="clearHistoryBtn" class="btn-secondary btn-small">Clear</button>
+                </div>
+                <div id="historyList" class="history-list">
+                    <p class="empty-message">No plants identified yet.</p>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>🌱 Powered by Gemini AI · Built for Earth Day</p>
+        </footer>
+    </div>
+
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+ecosnap/
+├── index.html
+├── style.css
+├── script.js
+├── config.js          # API Key (tidak di-commit jika diinginkan)
+├── server.py          # Opsional
+├── README.md
+└── assets/            # Screenshot & logo
