@@ -19,5 +19,5 @@ Thumbs.db
 *.swp
 *.swo
 
-# Environment (opsional – simpan config.js di repo jika public key)
-# config.js
+# Environment
+config.js
